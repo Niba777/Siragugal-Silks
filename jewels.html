@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jewels Collection – Siragugal Silks</title>
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="nav-container">
+      <h1 class="logo">Siragugal Silks</h1>
+    </div>
+  </header>
+
+  <!-- ===== Jewels Collection Section ===== -->
+  <section class="collections">
+    <div class="collections-container">
+      <h2>Jewels Collection</h2>
+
+      <!-- Search bar optional -->
+      <!-- <input type="text" id="searchInput" placeholder="Search jewels..." class="search-bar"> -->
+
+      <div class="jewel-gallery">
+        <div class="jewel-card">
+          <img src="jewels/jewel1.jpg" alt="Divine Lotus – Temple Jhumkas">
+          <h3>Divine Lotus – Temple Jhumkas</h3>
+          <p>Intricate goddess motif with ruby and emerald accents, inspired by traditional South Indian heritage.</p>
+          <a class="whatsapp-button" href="https://wa.me/4915217507824?text=I'm%20interested%20in%20Divine%20Lotus%20Temple%20Jhumkas" target="_blank">Order via WhatsApp</a>
+        </div>
+      
+        <div class="jewel-card">
+          <img src="jewels/jewel2.jpg" alt="Anjali Strings – Hair Accessory">
+          <h3>Anjali Strings – Hair Accessory</h3>
+          <p>Triple-layered gold-toned chains for hair braiding, a graceful finish to festive looks.</p>
+          <a class="whatsapp-button" href="https://wa.me/4915217507824?text=I'm%20interested%20in%20Anjali%20Strings%20Hair%20Accessory" target="_blank">Order via WhatsApp</a>
+        </div>
+      
+        <div class="jewel-card">
+          <img src="jewels/jewel3.jpg" alt="Royal Drape – Stone Jhumkas">
+          <h3>Royal Drape – Stone Jhumkas</h3>
+          <p>Classic dome-shaped earrings with multicolored stones and fine floral carvings.</p>
+          <a class="whatsapp-button" href="https://wa.me/4915217507824?text=I'm%20interested%20in%20Royal%20Drape%20Stone%20Jhumkas" target="_blank">Order via WhatsApp</a>
+        </div>
+      
+        <div class="jewel-card">
+          <img src="jewels/jewel4.jpg" alt="Temple Bloom – Festive Jhumkas">
+          <h3>Temple Bloom – Festive Jhumkas</h3>
+          <p>Bold centerpiece with diamond-shape studs, perfect for celebrations and bridal wear.</p>
+          <a class="whatsapp-button" href="https://wa.me/4915217507824?text=I'm%20interested%20in%20Temple%20Bloom%20Festive%20Jhumkas" target="_blank">Order via WhatsApp</a>
+        </div>
+      
+        <div class="jewel-card">
+          <img src="jewels/jewel5.jpg" alt="Golden Petals – Daily Jhumkas">
+          <h3>Golden Petals – Daily Jhumkas</h3>
+          <p>Minimal floral design for everyday elegance with subtle shine.</p>
+          <a class="whatsapp-button" href="https://wa.me/4915217507824?text=I'm%20interested%20in%20Golden%20Petals%20Daily%20Jhumkas" target="_blank">Order via WhatsApp</a>
+        </div>
+      
+        <div class="jewel-card">
+          <img src="jewels/jewel6.jpg" alt="Natyam Grace – Traditional Bells">
+          <h3>Natyam Grace – Traditional Bells</h3>
+          <p>Inspired by Bharatanatyam ornaments, features netted domes with a sturdy clasp.</p>
+          <a class="whatsapp-button" href="https://wa.me/4915217507824?text=I'm%20interested%20in%20Natyam%20Grace%20Traditional%20Bells" target="_blank">Order via WhatsApp</a>
+        </div>
+      
+        <div class="jewel-card">
+          <img src="jewels/jewel7.jpg" alt="Mayura Splendor – Royal Jhumkas">
+          <h3>Mayura Splendor – Royal Jhumkas</h3>
+          <p>Peacock-pattern dome with red and green stones, radiating timeless charm.</p>
+          <a class="whatsapp-button" href="https://wa.me/4915217507824?text=I'm%20interested%20in%20Mayura%20Splendor%20Royal%20Jhumkas" target="_blank">Order via WhatsApp</a>
+        </div>
+      
+        <div class="jewel-card">
+          <img src="jewels/jewel8.jpg" alt="Lakshmi’s Blessing – Antique Jhumkas">
+          <h3>Lakshmi’s Blessing – Antique Jhumkas</h3>
+          <p>3D Lakshmi figurines enclosed in divine dome cages – temple collection exclusive.</p>
+          <a class="whatsapp-button" href="https://wa.me/4915217507824?text=I'm%20interested%20in%20Lakshmi's%20Blessing%20Antique%20Jhumkas" target="_blank">Order via WhatsApp</a>
+        </div>
+      
+        <div class="jewel-card">
+          <img src="jewels/jewel9.jpg" alt="Vaibhavi – Mango Motif Jhumkas">
+          <h3>Vaibhavi – Mango Motif Jhumkas</h3>
+          <p>Vibrant mix of leaf-top and mango motifs, a rich Kanjivaram complement.</p>
+          <a class="whatsapp-button" href="https://wa.me/4915217507824?text=I'm%20interested%20in%20Vaibhavi%20Mango%20Motif%20Jhumkas" target="_blank">Order via WhatsApp</a>
+        </div>
+      </div>
+      
+  
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Product Modal ===== -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modal-image" src="" alt="">
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <a id="modal-whatsapp" href="#" target="_blank" class="order-btn">To Order via WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- ===== Modal Script ===== -->
+  <script>
+    function openModal(element) {
+      const productName = element.getAttribute('data-product-name');
+      const productDescription = element.getAttribute('data-description');
+      const productImage = element.getAttribute('data-image');
+
+      document.getElementById('modal-image').src = productImage;
+      document.getElementById('modal-image').alt = productName;
+      document.getElementById('modal-title').textContent = productName;
+      document.getElementById('modal-description').textContent = productDescription;
+
+      const whatsappNumber = "4915217507824";
+      const message = Hi, I'm interested in the ${productName}.;
+      const url = https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)};
+      document.getElementById('modal-whatsapp').href = url;
+
+      document.getElementById('productModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('productModal').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

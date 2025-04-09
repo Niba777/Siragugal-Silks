@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siragugal Silks</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+
+
+<!-- ===== Header / Navbar ===== -->
+<header>
+    <div class="nav-container">
+      <h1 class="logo">Siragugal Silks</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Our Story</a></li>
+  
+          <!-- Dropdown Starts Here -->
+          <li class="dropdown">
+            <a href="#">Collections ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="sarees.html" target="_blank">Sarees</a></li>
+              <li><a href="lehengas.html" target="_blank">Lehengas</a></li>
+              <li><a href="jewels.html" target="_blank">Jewels</a></li>
+            </ul>
+          </li>
+          <!-- Dropdown Ends -->
+  
+          <li><a href="#request">Request</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+
+<!-- ===== Hero Section for Homepage ===== -->
+<section id="home" class="hero" style="background-image: url('heroimage.png');">
+    <div class="hero-content">
+      <h2>Drape Tradition. Wear Stories.</h2>
+      <p>Discover handpicked sarees woven with love from India & Sri Lanka.</p>
+      <a href="collections.html" class="btn">Explore Collections</a>
+    </div>
+  </section>
+  
+
+
+
+  <!-- ===== Our Story Section ===== -->
+<!-- ===== Our Story Section ===== -->
+<section id="story" class="our-story">
+    <div class="story-container">
+      <!-- Logo Placeholder -->
+      <img src="logo.jpg" alt="Siragugal Silks Logo" class="story-logo">
+      
+      <h2>Our Story</h2>
+      <p>
+        Siragugal Silks is a family-run business that thrives on a passion for tradition and craftsmanship. 
+        We bring you handwoven sarees and lehengas from the heart of India and Sri Lanka, made with love and precision. 
+        Our goal is to offer you an experience where every piece tells a story, and every design represents the culture we cherish.
+      </p>
+      <p>
+        We believe that a saree or lehenga is not just a garment but a part of one’s identity, and we aim to bring you timeless pieces 
+        that celebrate beauty, culture, and craftsmanship. Whether it’s a wedding, a festival, or a special occasion, our collection 
+        has something that will make you shine.
+      </p>
+    </div>
+  </section>
+  
+
+<!-- ===== Request Form Section ===== -->
+<section id="request" class="request-section">
+    <div class="request-container">
+      <h2>Request a Saree</h2>
+      <p>Looking for something specific? Tell us your style, and we’ll help you find the perfect match.</p>
+  
+      <form id="requestForm" onsubmit="return redirectToWhatsApp()">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="whatsapp" placeholder="WhatsApp Number" required>
+        <textarea id="message" rows="4" placeholder="Tell us what you're looking for..." required></textarea>
+        <button type="submit">Send via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <script>
+    function redirectToWhatsApp() {
+      const name = document.getElementById('name').value;
+      const whatsapp = document.getElementById('whatsapp').value;
+      const message = document.getElementById('message').value;
+  
+      const fullMessage = `Name: ${name}%0AWhatsApp: ${whatsapp}%0AMessage: ${message}`;
+      const phoneNumber = "+4915217507824"; // Replace with your WhatsApp number
+      const url = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
+  
+      window.open(url, '_blank');
+      return false; // Prevent actual form submission
+    }
+  </script>
+  
+<!-- ===== Contact Section ===== -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Reach out anytime via the channels below.</p>
+  
+      <div class="contact-details">
+        <p><strong>Email:</strong> <a href="mailto:siragugalsilks@gmail.com">siragugalsilks@gmail.com</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/sirasilks" target="_blank">@sirasilks</a></p>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com/siragugalsilks" target="_blank">Siragugal Silks</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/+4915217507824" target="_blank">Chat with us</a></p>
+      </div>
+    </div>
+  </section>
+  
+
+  <a href="https://wa.me/+4915217507824" class="whatsapp-float" target="_blank" title="Chat with us">
+    💬
+  </a>
+   
+
+<!-- ===== Footer Section ===== -->
+<footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Siragugal Silks. All rights reserved.</p>
+      <p class="footer-quote">"Woven with love, worn with pride."</p>
+    </div>
+  </footer>
+  
+
+
+  
+
+  
+
+
+</body>
+</html>
